@@ -1,0 +1,15 @@
+body {color: #737373; font-size: 10px; font-family: verdana; background-color: #2ff0f3;}
+
+textarea,input,select {
+background-color: #FDFBFB;
+border: 1px solid #0e0101;
+padding: 2px;
+margin: 1px;
+font-size: 14px;
+color: #808080;
+}
+
+a, a:link, a:visited, a:active { color: #0a0909; text-decoration: none; font-size: 10px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 14px; color: #130101; }
