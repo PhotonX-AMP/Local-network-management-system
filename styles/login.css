@@ -13,3 +13,12 @@ a, a:link, a:visited, a:active { color: #0a0909; text-decoration: none; font-siz
 a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
 img {border: none;}
 td { font-size: 14px; color: #130101; }
+
+
+form span{
+    width: 30px;
+    height: 10px;
+    background-color: #0a0909;
+    border:solid #0a0909;
+    margin: 10px;
+}

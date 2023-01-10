@@ -39,25 +39,31 @@ $(endif)
 </div-->
 
 <div class="notice" style="color: #0a0101; font-size: 9px">Please log on to use the YON U RESIDENCE  internet service<!--br />$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)<br /--></div>
-			<form name="login" action="$(link-login-only)" method="post"
-				$(if chap-id) onSubmit="return doLogin()" $(endif)>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<div class="form-inner">
-					<h2>LOGIN</h2>
-					<input type="hidden" name="dst" value="$(link-orig)" />
-					<input type="hidden" name="popup" value="true" />	
-					<input name="username" type="text" placeholder="Username" value="$(username)"/>
-					<input  name="password" type="password" placeholder="Password"/>
-					<input type="submit" value="OK" /></td>
-			</form>
+	<form name="login" action="$(link-login-only)" method="post"
+		$(if chap-id) onSubmit="return doLogin()" $(endif)>
+
+		<div class="form-inner">
+			<h2>LOGIN</h2>
+			<input type="hidden" name="dst" value="$(link-orig)" />
+			<input type="hidden" name="popup" value="true" />	
+			<input name="username" type="text" placeholder="Username" value="$(username)"/>
+			<input  name="password" type="password" placeholder="Password"/>
+			<input type="submit" value="OK" /></td>
+			<div class="login-btn">
+                <a href="#" type="submit">
+                    Log In
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+	</form>
 	<a href="http://www.yonuresidence.com" target="_blank" style="border: none;"><!--img src="/img/logobottom.png" alt="mikrotik" /-->Contact 6 74 43 49 36
 	</a>
 </div>
-	<br /><div style="color: #080606; font-size: 9px">Enjoy!</div>
-	$(if error)<br /><div style="color: #080202; font-size: 9px">$(error)</div>$(endif)
+	<br /><div>Enjoy!</div>
+	$(if error)<br /><div>$(error)</div>$(endif)
 
 
 <script type="text/javascript">
